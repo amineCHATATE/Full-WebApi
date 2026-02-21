@@ -1,0 +1,27 @@
+﻿Restoring packages for C:\Users\amine\Desktop\Workpace\Full-WebApi\BlazorWasm.Test\BlazorWasm.Test.csproj...
+  GET https://api.nuget.org/v3-flatcontainer/moq/index.json
+  OK https://api.nuget.org/v3-flatcontainer/moq/index.json 613ms
+  GET https://api.nuget.org/v3-flatcontainer/moq/4.20.72/moq.4.20.72.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/moq/4.20.72/moq.4.20.72.nupkg 48ms
+  GET https://api.nuget.org/v3-flatcontainer/castle.core/index.json
+  OK https://api.nuget.org/v3-flatcontainer/castle.core/index.json 147ms
+  GET https://api.nuget.org/v3-flatcontainer/castle.core/5.1.1/castle.core.5.1.1.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/castle.core/5.1.1/castle.core.5.1.1.nupkg 42ms
+Installed Moq 4.20.72 from https://api.nuget.org/v3/index.json to C:\Users\amine\.nuget\packages\moq\4.20.72 with content hash EA55cjyNn8eTNWrgrdZJH5QLFp2L43oxl1tlkoYUKIE9pRwL784OWiTXeCV5ApS+AMYEAlt7Fo03A2XfouvHmQ==.
+Installed Castle.Core 5.1.1 from https://api.nuget.org/v3/index.json to C:\Users\amine\.nuget\packages\castle.core\5.1.1 with content hash rpYtIczkzGpf+EkZgDr9CClTdemhsrwA/W5hMoPjLkRFnXzH44zDLoovXeKtmxb1ykXK9aJVODSpiJml8CTw2g==.
+  CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2026.02.05.05.49.44/vulnerability.base.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2026.02.05.05.49.44/2026.02.06.17.49.49/vulnerability.update.json
+Installing NuGet package Moq 4.20.72.
+Writing assets file to disk. Path: C:\Users\amine\Desktop\Workpace\Full-WebApi\BlazorWasm.Test\obj\project.assets.json
+Successfully installed 'Castle.Core 5.1.1' to BlazorWasm.Test
+Successfully installed 'Moq 4.20.72' to BlazorWasm.Test
+Successfully installed 'System.Diagnostics.EventLog 6.0.0' to BlazorWasm.Test
+Executing nuget actions took 121 ms
+Time Elapsed: 00:00:02.0798822
+========== Finished ==========
+
+Time Elapsed: 00:00:00.0103723
+========== Finished ==========
+
+

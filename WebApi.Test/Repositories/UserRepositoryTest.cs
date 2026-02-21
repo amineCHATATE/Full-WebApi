@@ -28,7 +28,7 @@ namespace Test.Repositories
             if (!await _apiDBContext.Users.AnyAsync())
             {
                 _apiDBContext.Users.Add(
-                    new WebApi.Models.User()
+                    new User()
                     {
                         Name = $"amine",
                         Email = $"amine@mail.com"
@@ -70,21 +70,9 @@ namespace Test.Repositories
             var result = await _userRepository.UpdateUser(user);
             // Assert
             result.Should().BeTrue();
-            
+
         }
 
-        // Delete
-        // DELETE: UserRepository/DeleteUser
-        // Returns: True if the user was deleted successfully, otherwise false.
-        [Theory]
-        [InlineData(1)]
-        public async Task UserRepository_DeleteUser_ReturnsTrue_WhenSuccessful(int userId)
-        {
-            // Act
-            var result = await _userRepository.DeleteUser(userId);
-            // Assert
-            result.Should().BeTrue();
-        }
 
         // Get By Id
         // GET: UserRepository/GetUserById
@@ -114,6 +102,20 @@ namespace Test.Repositories
             result.Should().NotBeEmpty();
 
         }
+
+        // Delete
+        // DELETE: UserRepository/DeleteUser
+        // Returns: True if the user was deleted successfully, otherwise false.
+        [Theory]
+        [InlineData(1)]
+        public async Task UserRepository_DeleteUser_ReturnsTrue_WhenSuccessful(int userId)
+        {
+            // Act
+            var result = await _userRepository.DeleteUser(userId);
+            // Assert
+            result.Should().BeTrue();
+        }
+
     }
 
-}
+    }

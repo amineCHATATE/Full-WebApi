@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/Blazor/">
+    <Project Path="BlazorWasm.Test/BlazorWasm.Test.csproj" Id="5ecbb776-9c9b-4c8e-b3c0-08247648a83d" />
+    <Project Path="BlazorWasm/BlazorWasm.csproj" Id="59ee95f1-5ffe-4fda-985c-b41a1c4f1a24" />
+  </Folder>
+  <Folder Name="/SrcWebApi/">
+    <Project Path="ExternalApi/ExternalApi.csproj" />
+    <Project Path="WebApi.Test/WebApi.Test.csproj" />
+    <Project Path="WebApi/WebApi.csproj" />
+  </Folder>
+</Solution>

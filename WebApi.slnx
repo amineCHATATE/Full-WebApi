@@ -1,5 +1,0 @@
-<Solution>
-  <Project Path="ExternalApi/ExternalApi.csproj" />
-  <Project Path="Test/Test.csproj" />
-  <Project Path="WebApi/WebApi.csproj" />
-</Solution>

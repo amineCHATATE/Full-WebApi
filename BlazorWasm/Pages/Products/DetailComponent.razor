@@ -1,0 +1,40 @@
+﻿@page "/Produit/Detail/{produitId:int}"
+@using BlazorWasm.Models
+@using BlazorWasm.Services
+@inject IProductService _productService
+
+<PageTitle>Datail Produit</PageTitle>
+
+<h1>Datail Produit</h1>
+
+@if (product == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="card">
+        <div class="card-header">
+            <a href="add-product" class="btn btn-link test-primary float-end">Datail</a>
+        </div>
+        <div class="card-body">
+            <p class="card-text">@product.Id</p>
+            <p class="card-text">@product.Name</p>
+            <p class="card-text">@product.Quantity</p>
+        </div>
+    </div>
+}
+
+@code {
+
+    [Parameter] public int produitId { get; set; }
+
+    private Product product { get; set; } = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        product = await _productService.GetProductById(produitId);
+    }
+
+    
+}
